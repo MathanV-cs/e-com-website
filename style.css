@@ -7,26 +7,24 @@
     background-color: rgb(240, 221, 117);
     display: flex;
     justify-content: space-between;
-}
 
-.logo {
-    position: relative;
-    bottom: 15px;
 }
-
+.logo>img{
+    /* margin: 0%; */
+    border-radius: 0px;
+    /* border-style: hidden; */
+    
+}
 .headeroptions {
+    width: 400px;
     position: relative;
     right: 100px;
-}
 
-li:hover {
-    border-radius: 15px;
-    /* background-position: center;
-    /* background-color: rgba(255, 255, 255, 0.589); */
 }
 
 .headerlists>li>a {
     text-decoration: none;
+    color: black;
 }
 
 .headerlists {
@@ -37,10 +35,12 @@ li:hover {
     gap: 80px;
     list-style: none;
     text-decoration: none;
+
 }
 
 .jsDemo {
     margin-top: 20px;
+
 }
 
 .jsDemo>center>button {
@@ -57,22 +57,25 @@ footer {
     background-color: black;
 }
 
-footer>nav {
+.footerNav>p>a {
     position: relative;
     left: 20px;
     color: white;
     gap: 2px;
+    width: 60px;
 }
-nav>p{
-    
+
+.footerNav>p>a {
+
     line-height: 30px;
 }
-nav>p>a{
+
+.footerNav>p>a {
     text-decoration: none;
     color: white;
     line-height: 3px;
     position: ;
-    
+
 }
 
 /* footer page css code ends here */
@@ -96,7 +99,7 @@ nav>p>a{
 .about-header,
 .about-us-content {
     position: relative;
-    right: 150px;
+    right: 100px;
 }
 
 .about-header {
@@ -111,7 +114,7 @@ nav>p>a{
     line-height: 1.6;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
-    width: 450px;
+    width: 482px;
 }
 
 .about-second-header,
@@ -130,7 +133,8 @@ nav>p>a{
     width: 300px;
     color: black;
     font-weight: 600;
-    line-height: 1.6;
+    line-height: 1.2;
+    text-decoration: underline;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 20px;
 }
@@ -144,8 +148,13 @@ nav>p>a{
 
 .about-second-img {
     position: relative;
-    right: 80px;
+    right: 20px;
 }
+
+/* about us page css styling end */
+
+
+/* contact page css styling  */
 
 .age-validation-set {
     background-color: rgb(240, 221, 117);

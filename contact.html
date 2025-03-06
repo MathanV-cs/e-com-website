@@ -8,7 +8,7 @@
             line-height: 2;
             margin-top: 100px;
             text-align: center;
-            box-shadow: blue;
+            box-shadow: 2px 2px 2px 2px gray;
         }
 
         .field {
@@ -29,6 +29,23 @@
             position: relative;
             top: 13px;
         }
+
+        .footerNav>p>a{
+            line-height: 20px;
+        }
+        .footerNav{
+            
+        }
+        .bottom-nav{
+            position: relative;
+            top:190px;
+        }
+        body{
+            background-image: url(./assets/ageValidation-backround.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
     </style>
 </head>
 
@@ -36,7 +53,7 @@
     <div class="maincontainer">
         <div class="firstcontainer">
             <div class="logo">
-                <img src="./assets/logo-flowershop.jpg" alt="ifclogo" width="190" height="140">
+                <img src="./assets/logo-flowershop.jpg" alt="No image" width="130px" height="100px">
             </div>
             <div class="headeroptions">
                 <nav>
@@ -86,7 +103,6 @@
                 }
                 else {
                     notGood = "You are not eligible for voting.";
-                    // document.getElementById("yourAge").innerHTML = "You are not eligible for voting";
                     document.getElementById("yourAge").innerHTML = notGood;
                     document.getElementById("yourAge").style.color = "red";
                 }
@@ -96,5 +112,12 @@
     </div>
     
 </body>
+<footer class="bottom-nav">
+    <div class="footerNav">
+        <p><a href="./index.html">Home</a></p>
+        <p><a href="./about.html">About</a></p>
+        <p><a href="./contact.html">Contact</a></p>
+        </div>
+</footer>
 
 </html>
