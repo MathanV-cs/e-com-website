@@ -61,6 +61,18 @@ footer>nav {
     position: relative;
     left: 20px;
     color: white;
+    gap: 2px;
+}
+nav>p{
+    
+    line-height: 30px;
+}
+nav>p>a{
+    text-decoration: none;
+    color: white;
+    line-height: 3px;
+    position: ;
+    
 }
 
 /* footer page css code ends here */

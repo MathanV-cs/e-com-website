@@ -8,6 +8,7 @@
             line-height: 2;
             margin-top: 100px;
             text-align: center;
+            box-shadow: blue;
         }
 
         .field {
@@ -26,7 +27,7 @@
             border-color: red;
             color: blue;
             position: relative;
-            top: 15;
+            top: 13px;
         }
     </style>
 </head>
@@ -48,6 +49,7 @@
             </div>
         </div>
         <div class="age-validation-set">
+           
             <h2>Vote eligibility</h2>
             <p>Enter your age here</p>
             <input id="inputAge"><br>
@@ -55,7 +57,9 @@
             <fieldset class="field">
                 <p id="yourAge"></p>
             </fieldset>
+      
         </div>
+        
         <script>
             function ageValidation() {
                 let ageValue = document.getElementById("inputAge").value;
@@ -90,6 +94,7 @@
             }
         </script>
     </div>
+    
 </body>
 
 </html>
