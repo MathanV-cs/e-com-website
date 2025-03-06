@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .secondcontainer {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 90px;
+        }
+
+        .secondleft>#bigtext {
+            font-size: 30px;
+            width: 800px;
+        }
+
+        .secondleft>#ageratumlists {
+            width: 299px;
+            /* background-color: aqua; */
+            font-size: 19px;
+            position: relative;
+            left: 85px;
+            bottom: 10px;
+        }
+
+        .thirdcontainer {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .thirdcontainer>button>a {
+            text-decoration: none;
+        }
+
+        .thirdcontainer>button {
+            width: 150px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 05px 20px 05px 20px;
+            border-color: red;
+            background-color: aliceblue;
+        }
+
+        .fourthcontainer {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .fourthright {
+            border-radius: 20px;
+            width: 300px;
+            background-color: rgb(226, 144, 38);
+            text-align: center;
+
+        }
+
+
+        .fourthleft {
+            border-radius: 20px;
+            width: 300px;
+            background-color: rgb(226, 144, 38);
+            text-align: center;
+
+        }
+
+        #rightcontent {
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        #leftcontent {
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .fifthcontainer {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="firstcontainer">
+            <div class="logo">
+                <img src="./assets/logo-flowershop.jpg" alt="ifclogo" width="190" height="140">
+            </div>
+            <div class="headeroptions">
+                <ol class="headerlists">
+                    <li><a href="./index.html"> Home</a></li>
+                    <li><a href="./about.html"> About</a></li>
+                    <li><a href="./contact.html"> Contact</a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="secondcontainer">
+            <div class="secondleft">
+                <h3 id="bigtext">
+                    Ageratum is a tough plant that is a favorite for many gardens. These beautiful blue annuals are
+                    known for their powder puff blooms.
+                </h3><br>
+                <ul id="ageratumlists">
+                    <li>Plant in full sun or partial shade.</li>
+                    <li>Needs well-drained soil.</li>
+                    <li>Blooms in mid-summer to mid-fall.</li>
+                </ul>
+            </div>
+            <div class="secondright">
+                <img src="./assets/ageratum.jpg" alt="flower" width="400">
+            </div>
+        </div>
+        <div class="thirdcontainer">
+            <button><a href="./contact.html">Contact Us</a></button>
+        </div>
+        <div class="fourthcontainer">
+            <div class="fourthright">
+                <p id="rightcontent">Aconite flowers are also known as winter aconite. They spread easily and can be
+                    planted as tubers or
+                    seeds. Aconite is often found growing in patches and is spring’s first flower.</p>
+
+            </div>
+            <div class="fourthleft">
+                <p id="leftcontent">Alstroemeria is a flower commonly used in floral arrangements due to its variation
+                    in colors and its
+                    ability to be dyed. Their blooms make it easy for florists to create bouquets such as “100 blooms.”
+                </p>
+            </div>
+        </div>
+        <div class="fifthcontainer">
+            <div class="firstimg">
+                <b>Aconite</b><br><br>
+                <img src="./assets/aconite.jpg" alt="no image" width="350">
+            </div>
+            <div class="secondimg">
+                <b>Alstromeria</b><br><br>
+                <img src="./assets/alstromeria.jpg" alt="no image" width="350">
+            </div>
+            <div class="firstimg">
+                <b>Ageratum</b><br><br>
+                <img src="./assets/ageratum.jpg" alt="no image" width="350">
+            </div>
+        </div>
+        <div class="jsDemo">
+           <center><p id="next">This flower shop provides you with so many choices to buy what you want... </p></center> 
+           <center><button onclick="change()"><u>Click here</u></button></center> 
+        </div>
+    </div>
+
+
+
+    <script>
+        function change() {
+            document.getElementById("next").innerHTML = "Here you can find variety of flowers and plants...";
+        }
+
+    </script>
+<footer>
+    <nav>
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+    </nav>
+</footer>
+
+</body>
+
+</html>

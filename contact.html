@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .age-validation-set {
+            line-height: 2;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .field {
+            width: 300px;
+            height: 65px;
+            border-radius: 10px;
+            position: relative;
+            left: 87px;
+            bottom: 10px;
+            background-color: aliceblue;
+        }
+
+        .age-validation-set>button {
+            background-color: aliceblue;
+            border-radius: 1px 5px;
+            border-color: red;
+            color: blue;
+            position: relative;
+            top: 15;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="firstcontainer">
+            <div class="logo">
+                <img src="./assets/logo-flowershop.jpg" alt="ifclogo" width="190" height="140">
+            </div>
+            <div class="headeroptions">
+                <nav>
+                    <ol class="headerlists" style="color: black;">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="age-validation-set">
+            <h2>Vote eligibility</h2>
+            <p>Enter your age here</p>
+            <input id="inputAge"><br>
+            <button type="button" onclick="ageValidation()">submit</button><br><br>
+            <fieldset class="field">
+                <p id="yourAge"></p>
+            </fieldset>
+        </div>
+        <script>
+            function ageValidation() {
+                let ageValue = document.getElementById("inputAge").value;
+                if (ageValue >= 18 && ageValue <=24) {
+                    text = "You are eligible for voting!";
+                    document.getElementById("yourAge").innerHTML = text;
+                    document.getElementById("yourAge").style.color = "green";
+                }
+                else if (ageValue >= 25 && ageValue <= 49) {
+                    text2 = "You are old enough to get married and still checking your age?";
+                    document.getElementById("yourAge").innerHTML = text2;
+                    document.getElementById("yourAge").style.color = "blue";
+                }
+                else if (ageValue >= 50) {
+                    text2 = "You are too old!...you know that?";
+                    document.getElementById("yourAge").innerHTML = text2;
+                    document.getElementById("yourAge").style.color = "brown";
+                }
+                else if (ageValue == "") {
+                    alert("Please enter your age");
+                    text1 = "Please enter your age..";
+                    document.getElementById("yourAge").innerHTML = text1;
+                    document.getElementById("yourAge").style.color = "purple";
+                }
+                else {
+                    notGood = "You are not eligible for voting.";
+                    // document.getElementById("yourAge").innerHTML = "You are not eligible for voting";
+                    document.getElementById("yourAge").innerHTML = notGood;
+                    document.getElementById("yourAge").style.color = "red";
+                }
+
+            }
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0%;
+}
+
+.firstcontainer {
+    height: 100px;
+    background-color: rgb(240, 221, 117);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    bottom: 15px;
+}
+
+.headeroptions {
+    position: relative;
+    right: 100px;
+}
+
+li:hover {
+    border-radius: 15px;
+    /* background-position: center;
+    /* background-color: rgba(255, 255, 255, 0.589); */
+}
+
+.headerlists>li>a {
+    text-decoration: none;
+}
+
+.headerlists {
+    position: relative;
+    top: 38px;
+    right: 10px;
+    display: flex;
+    gap: 80px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.jsDemo {
+    margin-top: 20px;
+}
+
+.jsDemo>center>button {
+    color: blue;
+    background-color: white;
+    border: none
+}
+
+/* footer page css code starts here */
+footer {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: black;
+}
+
+footer>nav {
+    position: relative;
+    left: 20px;
+    color: white;
+}
+
+/* footer page css code ends here */
+
+/* About page styling starts here */
+
+.about-us-maincontainer {
+    margin-top: 70px;
+}
+
+.about-us-first {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-first-img {
+    position: relative;
+    left: 80px;
+}
+
+.about-header,
+.about-us-content {
+    position: relative;
+    right: 150px;
+}
+
+.about-header {
+    color: black;
+    font-weight: 600;
+    line-height: 1.6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.about-us-content {
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    width: 450px;
+}
+
+.about-second-header,
+.about-us-second-content {
+    position: relative;
+    left: 80px;
+}
+
+.about-us-second {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-second-header {
+    width: 300px;
+    color: black;
+    font-weight: 600;
+    line-height: 1.6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.about-us-second-content {
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    width: 450px;
+}
+
+.about-second-img {
+    position: relative;
+    right: 80px;
+}
+
+.age-validation-set {
+    background-color: rgb(240, 221, 117);
+    width: 500;
+    border-radius: 15px;
+    position: relative;
+    left: 500px;
+}
